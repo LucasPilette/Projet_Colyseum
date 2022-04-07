@@ -1,0 +1,28 @@
+# links follow
+Options +FollowSymlinks 
+# rewrite Apache activate
+RewriteEngine On
+
+# /home -> controller-home.php
+RewriteRule ^home$ controllers/controller-home.php [L]
+
+# /exo1 -> controller-exo1.php
+RewriteRule ^exo1$ controllers/controller-exo1.php [L]
+
+# /exo2 -> controller-exo2.php
+RewriteRule ^exo2$ controllers/controller-exo2.php [L]
+
+# /exo3 -> controller-exo3.php
+RewriteRule ^exo3$ controllers/controller-exo3.php [L]
+
+# /exo4 -> controller-exo4.php
+RewriteRule ^exo4$ controllers/controller-exo4.php [L]
+
+# /exo5 -> controller-exo5.php
+RewriteRule ^exo5$ controllers/controller-exo5.php [L]
+
+# /exo6 -> controller-exo6.php
+RewriteRule ^exo6$ controllers/controller-exo6.php [L]
+
+# /exo7 -> controller-exo7.php
+RewriteRule ^exo7$ controllers/controller-exo7.php [L]

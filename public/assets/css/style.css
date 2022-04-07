@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-size: 16px;
+}
+
+.primary{
+    color :rgb(226, 219, 187) ;
+}
+
+.secondary{
+    color: rgb(22, 0, 76);
+}
+
+
+
+body{
+    background-color: rgb(226, 219, 187);
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: bold;
+    color: rgb(22, 0, 76);
+    justify-content: center;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 30px 15%;
+}
+
+.container>div{
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgba(179, 134, 150, 0.664);
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+    margin: 50px 0;
+    color: rgb(22, 0, 76);
+}
+
+p{
+    color: rgb(22, 0, 76);
+}
+
+.elemContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#exo4{
+    justify-content: space-evenly;
+    
+}
+
+#exo5{
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+#exo5Elem{
+    width: 30%;
+}
+
+#exo6{
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+#exo6Elem{
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+#exo7Elem{
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.elem{
+    width: 20%;
+}
+
+.title>a{
+    text-decoration: none;
+    color: rgb(22, 0, 76);
+    font-weight: bold;
+    font-size: 130%;
+}
+
+li>a{
+    text-decoration: none;
+    color: rgb(22, 0, 76);
+    font-size: 120%;
+}
+
+.mainTitle>a{
+    text-decoration: none;
+    color: rgb(22, 0, 76);
+    font-size: 120%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
