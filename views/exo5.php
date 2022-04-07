@@ -20,7 +20,7 @@ $mClients = $requestM->fetchAll();
         <div class="elemContainer" id="exo5">
             <?php
                 foreach($mClients as $mClient){
-                    echo '<div class="elem" id="exo5Elem"><p> Nom : '.$mClient['firstName'].'<br> Prénom : '.$mClient['lastName'].'</p></div>';
+                    echo '<div class="elem" id="exo5Elem"><p> Nom : '.$mClient->firstName.'<br> Prénom : '.$mClient->lastName.'</p></div>';
                 }
             ?>
         </div>

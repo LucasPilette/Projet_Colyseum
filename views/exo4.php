@@ -21,7 +21,7 @@ $fidelityClients = $requestFidelity->fetchAll();
         <div class="elemContainer" id="exo4">
             <?php
                 foreach($fidelityClients as $fidelityClient){
-                    echo '<div class="elem "><p>'.$fidelityClient['firstName'].' '.$fidelityClient['lastName'].'</p></div>';
+                    echo '<div class="elem "><p>'.$fidelityClient->firstName.' '.$fidelityClient->lastName.'</p></div>';
                 }
             ?>
         </div>

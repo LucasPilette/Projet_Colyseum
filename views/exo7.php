@@ -21,8 +21,8 @@ $clients = $requestClient->fetchAll();
             <?php
                 foreach($clients as $client){
                     
-                    if($client['cardNumber'] != NULL){
-                        if($client['cardTypesId'] = '1'){
+                    if($client->cardNumber != NULL){
+                        if($client->cardTypesId == '1'){
                             $check = 'oui';
                         } else {
                             $check = 'non';
@@ -31,14 +31,14 @@ $clients = $requestClient->fetchAll();
                         $check = 'non';
                     }
 
-                    if($client['cardNumber'] != NULL){
-                        $cardNumber = $client['cardNumber'];
+                    if($client->cardNumber != NULL){
+                        $cardNumber = $client->cardNumber;
                     } else {
                         $cardNumber = 'Pas de carte';
                     }
-                    echo '<div class="elem" id="exo7Elem"><p> Nom : '.$client['lastName'].
-                    '<br> Prénom : '.$client['firstName'].
-                    '<br> Date de naissance : '.$client['birthDate'].
+                    echo '<div class="elem" id="exo7Elem"><p> Nom : '.$client->lastName.
+                    '<br> Prénom : '.$client->firstName.
+                    '<br> Date de naissance : '.$client->birthDate.
                     '<br> Carte de fidélité : '.$check.
                     '<br> Numéro de carte : '.$cardNumber.
                     ' </p></div>';

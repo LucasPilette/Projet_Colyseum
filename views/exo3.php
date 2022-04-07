@@ -17,7 +17,7 @@ $twentyCustomers = $requestTwenty->fetchAll();
         <div class="elemContainer">
             <?php
                 foreach($twentyCustomers as $twentyCustomer){
-                    echo '<div class="elem"><p>'.$twentyCustomer['id'].' : '.$twentyCustomer['firstName'].'</p></div>';
+                    echo '<div class="elem"><p>'.$twentyCustomer->id.' : '.$twentyCustomer->firstName.'</p></div>';
                 }
             ?>
         </div>

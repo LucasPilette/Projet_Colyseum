@@ -5,6 +5,9 @@ $requestShows = $pdo->prepare("SELECT * FROM showtypes ");
 $requestShows-> execute();
 $showTypes = $requestShows->fetchAll();
 
+// var_dump($showTypes);
+// die;
+
 ?>
 
 <div class="container">
@@ -16,8 +19,10 @@ $showTypes = $requestShows->fetchAll();
         
         <div class="elemContainer">
             <?php
+                $count = 0;
                 foreach($showTypes as $showType){
-                    echo '<div class="elem"><p>'.$showType['type'].'</p></div>';
+                    echo '<div class="elem"><p>'.$showType->type.'</p></div>';
+                    $count++;
                 }
             ?>
         </div>

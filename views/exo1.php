@@ -5,6 +5,9 @@ $requestName = $pdo->prepare("SELECT * FROM clients");
 $requestName->execute();
 $customers = $requestName->fetchAll();
 
+// var_dump($customers);
+// die;
+
 ?>
 
 <div class="container">
@@ -16,7 +19,7 @@ $customers = $requestName->fetchAll();
         <div class="elemContainer">
             <?php
                 foreach($customers as $customer){
-                    echo '<div class="elem"><p>'.$customer['lastName'].'</p></div>';
+                    echo '<div class="elem"><p>'.$customer->firstName.'</p></div>';
                 }
             ?>
         </div>
