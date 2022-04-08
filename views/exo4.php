@@ -1,17 +1,3 @@
-<?php
-// Exo 4 
-
-$requestFidelity = $pdo->prepare
-("SELECT clients.firstName, clients.lastName
-FROM clients
-INNER JOIN cards
-ON clients.cardNumber = cards.cardNumber
-WHERE cards.cardTypesId = 1;");
-$requestFidelity->execute();
-$fidelityClients = $requestFidelity->fetchAll();
-
-?>
-
 <div class="container">
     <div>
     <div class="title">

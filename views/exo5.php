@@ -1,16 +1,3 @@
-<?php
-// Exo 5 
-
-$requestM = $pdo->prepare
-("SELECT clients.firstName, clients.lastName
-FROM clients
-WHERE clients.lastName LIKE 'm%'
-ORDER BY clients.lastName;");
-$requestM->execute();
-$mClients = $requestM->fetchAll();
-
-?>
-
 <div class="container">
     <div>
     <div class="title">

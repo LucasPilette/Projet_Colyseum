@@ -1,12 +1,3 @@
-<?php
-// Exo 3 
-
-$requestTwenty = $pdo->prepare("SELECT * FROM clients WHERE clients.id <= 20");
-$requestTwenty-> execute();
-$twentyCustomers = $requestTwenty->fetchAll();
-
-?>
-
 <div class="container">
     <div>
         <div class="title">

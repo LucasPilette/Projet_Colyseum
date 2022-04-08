@@ -1,15 +1,3 @@
-<?php
-// Exo 6
-
-$requestEvents = $pdo->prepare
-("SELECT shows.title, shows.performer, shows.date, shows.startTime
-FROM shows
-ORDER BY shows.title;");
-$requestEvents->execute();
-$events = $requestEvents->fetchAll();
-
-?>
-
 <div class="container">
     <div>
         <div class="title">

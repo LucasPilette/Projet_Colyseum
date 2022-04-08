@@ -1,16 +1,3 @@
-<?php
-// Exo 7 
-
-$requestClient = $pdo->prepare
-("SELECT clients.firstName, clients.lastName, clients.birthDate,cards.cardTypesId,clients.cardNumber
-FROM clients
-LEFT OUTER JOIN cards
-ON clients.cardNumber = cards.cardNumber;");
-$requestClient->execute();
-$clients = $requestClient->fetchAll();
-
-?>
-
 <div class="container">
     <div>
     <div class="title">

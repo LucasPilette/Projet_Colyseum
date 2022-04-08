@@ -1,14 +1,3 @@
-<?php
-// Exo 1 
-
-$requestName = $pdo->prepare("SELECT * FROM clients");
-$requestName->execute();
-$customers = $requestName->fetchAll();
-
-// var_dump($customers);
-// die;
-
-?>
 
 <div class="container">
     <div>

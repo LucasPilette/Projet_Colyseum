@@ -1,15 +1,3 @@
-<?php
-// Exo 2 
-
-$requestShows = $pdo->prepare("SELECT * FROM showtypes ");
-$requestShows-> execute();
-$showTypes = $requestShows->fetchAll();
-
-// var_dump($showTypes);
-// die;
-
-?>
-
 <div class="container">
     <div>
         <div class="title">
