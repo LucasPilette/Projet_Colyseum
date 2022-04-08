@@ -6,11 +6,21 @@
             <a href="/exo2">Exercice suivant</a>
         </div>
         <div class="elemContainer">
-            <?php
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
                 foreach($customers as $customer){
-                    echo '<div class="elem"><p>'.$customer->firstName.'</p></div>';
+                    echo '<tr><td>'.$customer->firstName.'</td><td>'.$customer->lastName.'</td></tr>';
                 }
             ?>
+                </tbody>
+            </table>
         </div>
             
     </div>

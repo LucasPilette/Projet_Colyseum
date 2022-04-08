@@ -5,11 +5,21 @@
             <a href="/exo7">Exercice suivant</a>
         </div>
         <div class="elemContainer" id="exo6">
-            <?php
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
                 foreach($events as $event){
-                    echo '<div class="elem" id="exo6Elem"><p>'.$event->title.' par '.$event->performer.' le '.$event->date.' à '.$event->startTime.'</p></div>';
+                    echo '<tr><td>'.$event->title.' par '.$event->performer.' le '.$event->date.' à '.$event->startTime.'</td></tr>';
                 }
-            ?>
+                ?>
+                </tbody>
+            </table>
+            
         </div>
             
     </div>

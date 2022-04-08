@@ -5,11 +5,22 @@
             <a href="/exo6">Exercice suivant</a>
         </div>
         <div class="elemContainer" id="exo5">
-            <?php
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
                 foreach($mClients as $mClient){
-                    echo '<div class="elem" id="exo5Elem"><p> Nom : '.$mClient->firstName.'<br> Prénom : '.$mClient->lastName.'</p></div>';
+                    echo '<tr><td>'.$mClient->firstName.'</td><td>'.$mClient->lastName.'</td></tr>';
                 }
             ?>
+                </tbody>
+            </table>
+            
         </div>
             
     </div>

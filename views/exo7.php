@@ -5,17 +5,28 @@
             <a href="/home">Revenir au menu</a>
         </div>
         <div class="elemContainer" id="exo7">
-            <?php
+            <table id="number7">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Date de naissance</th>
+                        <th>Carte de fidélité</th>
+                        <th>Numéro de carte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
                 foreach($clients as $client){
                     
                     if($client->cardNumber != NULL){
                         if($client->cardTypesId == '1'){
-                            $check = 'oui';
+                            $check = 'Oui';
                         } else {
-                            $check = 'non';
+                            $check = 'Non';
                         }
                     } else {
-                        $check = 'non';
+                        $check = 'Non';
                     }
 
                     if($client->cardNumber != NULL){
@@ -23,14 +34,17 @@
                     } else {
                         $cardNumber = 'Pas de carte';
                     }
-                    echo '<div class="elem" id="exo7Elem"><p> Nom : '.$client->lastName.
-                    '<br> Prénom : '.$client->firstName.
-                    '<br> Date de naissance : '.$client->birthDate.
-                    '<br> Carte de fidélité : '.$check.
-                    '<br> Numéro de carte : '.$cardNumber.
-                    ' </p></div>';
+                    echo '<tr><td>'.$client->lastName.
+                    '</td><td>'.$client->firstName.
+                    '</td><td>'.$client->birthDate.
+                    '</td><td>'.$check.
+                    '</td><td>'.$cardNumber.
+                    '</td></tr>';
                 }
-            ?>
+                ?>
+                </tbody>
+            </table>
+            
         </div>
         
     </div>

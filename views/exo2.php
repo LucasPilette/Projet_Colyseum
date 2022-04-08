@@ -6,13 +6,21 @@
         </div>
         
         <div class="elemContainer">
-            <?php
-                $count = 0;
-                foreach($showTypes as $showType){
-                    echo '<div class="elem"><p>'.$showType->type.'</p></div>';
-                    $count++;
-                }
-            ?>
+        <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    foreach($showTypes as $showType){
+                        echo '<tr><td>'.$showType->type.'</td></tr>';
+                    }
+                    ?>
+                </tbody>
+            </table>
+            
         </div>
     </div>
 </div>

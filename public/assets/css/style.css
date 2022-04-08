@@ -129,3 +129,28 @@ li>a{
     align-items: center;
     justify-content: space-between;
 }
+
+
+
+
+table{
+    width: 60%;
+}
+
+#number7{
+    width: 75%;
+}
+
+table,
+td, th {
+    border: 1px solid #333;
+}
+
+th{
+    background-color: rgb(22, 0, 76);
+    color: rgb(226, 219, 187);
+}
+
+td{
+    background-color: rgb(226, 219, 187);
+}

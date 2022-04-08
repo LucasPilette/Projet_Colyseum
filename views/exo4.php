@@ -5,11 +5,22 @@
             <a href="/exo5">Exercice suivant</a>
         </div>
         <div class="elemContainer" id="exo4">
-            <?php
-                foreach($fidelityClients as $fidelityClient){
-                    echo '<div class="elem "><p>'.$fidelityClient->firstName.' '.$fidelityClient->lastName.'</p></div>';
-                }
-            ?>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                    foreach($fidelityClients as $fidelityClient){
+                        echo '<tr><td>'.$fidelityClient->firstName.'</td><td>'.$fidelityClient->lastName.'</td></tr>';
+                    }
+                ?>
+                </tbody>
+            </table>
+            
         </div>
             
     </div>
